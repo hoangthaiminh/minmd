@@ -87,7 +87,25 @@ async def like_button():
         <title>Like thành công</title>
     </head>
     <body>
-        <strong>Cảm ơn bạn đã thích, giờ hãy quay lại và reload lại trang</strong>
+        <strong>Cảm ơn bạn đã thích, hãy quay lại và reload lại trang bạn nhé</strong>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html)
+
+@app.get("/load")
+async def like_button():
+    html = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Start thành công</title>
+    </head>
+    <body>
+        <h2><b>Khởi động thành công</b></h2>
+        <strong>Khởi động máy chủ thành công!</strong>
+        <strong>Hãy quay lại trang thông tin của mình và reload lại bạn nhé!</strong>
     </body>
     </html>
     """
