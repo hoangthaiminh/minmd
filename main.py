@@ -94,7 +94,7 @@ async def like_button():
     return HTMLResponse(content=html)
 
 @app.get("/load")
-async def like_button():
+async def reloadbtn():
     html = """
     <!DOCTYPE html>
     <html>
